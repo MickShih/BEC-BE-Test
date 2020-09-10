@@ -11,7 +11,5 @@ module.exports = (err, req, res, next) => {
       break;
     }
   }
-  catch (e) {
-    res.status(400).send({"error": "Handled Rejection."});
-  } 
+  catch (e) { res.status(400).send({"error": "Handled Rejection."});} 
 }

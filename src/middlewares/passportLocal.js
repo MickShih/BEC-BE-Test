@@ -18,7 +18,5 @@ module.exports = (req, res, next) => {
       });
     })(req, res, next);
   }
-  catch (e) {
-    res.status(400).send({"error": "Invalid Email or Password"}); 
-  }  
+  catch (e) { res.status(400).send({"error": "Invalid Email or Password"}); }  
 }
